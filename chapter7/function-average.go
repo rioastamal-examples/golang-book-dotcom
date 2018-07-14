@@ -4,14 +4,13 @@ import "fmt"
 func main() {
     scores := make([]float64, 0)
     var total float64
-    var ask_user bool = true
     var index uint8 = 0
     var tmp_input float64
 
     // Put infinite loop
     fmt.Println("Getting average of score.\nType -1 to quit.")
     fmt.Println("----------------")
-    for ask_user {
+    for true {
         fmt.Print("Input score ", index + 1, ": ")
 
         fmt.Scanf("%f", &tmp_input)
