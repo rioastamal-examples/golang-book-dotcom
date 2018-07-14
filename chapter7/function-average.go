@@ -15,7 +15,7 @@ func main() {
 
         fmt.Scanf("%f", &tmp_input)
 
-        if (tmp_input == -1) { break }
+        if tmp_input == -1 { break }
 
         // Resize score slice
         scores = append(scores, tmp_input)
