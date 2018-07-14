@@ -58,9 +58,10 @@ func avg(numbers []float64) (float64, string, int) {
     }
 
     // Return values
-    // 1. Need to convert length of the numbers so it has
+    // 1. Average score. Need to convert length of the numbers so it has
     //    same data type float64
     // 2. Even or odd number
+    // 3. Integer version of the result
     result = total / float64( len(numbers) )
 
     if int(result) % 2 == 0 {
