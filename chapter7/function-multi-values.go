@@ -4,7 +4,7 @@ import "fmt"
 func main() {
     scores := make([]float64, 0)
     var index uint8 = 0
-    var tmp_input float64
+    var tmpInput float64
 
     // Put infinite loop
     fmt.Println("Getting average of score.\nType -1 to quit.")
@@ -12,20 +12,20 @@ func main() {
     for true {
         fmt.Print("Input score ", index + 1, ": ")
 
-        fmt.Scanf("%f", &tmp_input)
+        fmt.Scanf("%f", &tmpInput)
 
-        if tmp_input == -1 { break }
+        if tmpInput == -1 { break }
 
         // Resize score slice
-        scores = append(scores, tmp_input)
+        scores = append(scores, tmpInput)
         index++
     }
 
-    avg_result, total, odd_even, avg_result_int := avg(scores)
+    avgResult, total, oddEven, avgResult_int := avg(scores)
     fmt.Println("-------------")
     fmt.Printf("We have %d score(s) with total %v.\n", index, total)
-    fmt.Printf("Average score is %v.\n", avg_result)
-    fmt.Printf("Average score is %v number (integer -> %v).\n", odd_even, avg_result_int)
+    fmt.Printf("Average score is %v.\n", avgResult)
+    fmt.Printf("Average score is %v number (integer -> %v).\n", oddEven, avgResult_int)
 }
 
 // Function start with keyword funcz

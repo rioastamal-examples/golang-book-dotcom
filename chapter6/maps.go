@@ -35,30 +35,30 @@ func main() {
     users := make(map[string]map[string]string)
     fmt.Println()
 
-    var tmp_input [3]string
+    var tmpInput [3]string
     fmt.Println("Do not use space for input. Type `quit` to close program.")
 
     for true {
         fmt.Print("Input username: ")
-        fmt.Scan(&tmp_input[0])
+        fmt.Scan(&tmpInput[0])
 
-        if tmp_input[0] == "quit" {
+        if tmpInput[0] == "quit" {
             break
         }
 
         fmt.Print(" -> Input first name: ")
-        fmt.Scan(&tmp_input[1])
+        fmt.Scan(&tmpInput[1])
 
         fmt.Print(" -> Input last name: ")
-        fmt.Scan(&tmp_input[2])
+        fmt.Scan(&tmpInput[2])
         fmt.Println()
 
         // Code below will trigger error
         // --> panic: assignment to entry in nil map
         // If we do not initialize with make() first
-        users[tmp_input[0]] = make(map[string]string)
-        users[tmp_input[0]]["first_name"] = tmp_input[1]
-        users[tmp_input[0]]["last_name"] = tmp_input[2]
+        users[tmpInput[0]] = make(map[string]string)
+        users[tmpInput[0]]["first_name"] = tmpInput[1]
+        users[tmpInput[0]]["last_name"] = tmpInput[2]
     }
 
     fmt.Println("\nUsers list")

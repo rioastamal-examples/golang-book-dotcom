@@ -23,9 +23,10 @@ func main() {
     for true {
         fmt.Printf("Try #%d - Input a number: ", index)
         fmt.Scanf("%d", &tmpInput)
-        fmt.Printf("Number %v is %v.\n", tmpInput, oddEven(tmpInput))
 
         if tmpInput == -1 { break }
+
+        fmt.Printf("Number %v is %v.\n", tmpInput, oddEven(tmpInput))
     }
 
     fmt.Println("\nSee you later.")

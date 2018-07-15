@@ -5,7 +5,7 @@ func main() {
     scores := make([]float64, 0)
     var total float64
     var index uint8 = 0
-    var tmp_input float64
+    var tmpInput float64
 
     // Put infinite loop
     fmt.Println("Getting average of score.\nType -1 to quit.")
@@ -13,13 +13,13 @@ func main() {
     for true {
         fmt.Print("Input score ", index + 1, ": ")
 
-        fmt.Scanf("%f", &tmp_input)
+        fmt.Scanf("%f", &tmpInput)
 
-        if tmp_input == -1 { break }
+        if tmpInput == -1 { break }
 
         // Resize score slice
-        scores = append(scores, tmp_input)
-        total += tmp_input
+        scores = append(scores, tmpInput)
+        total += tmpInput
         index++
     }
 

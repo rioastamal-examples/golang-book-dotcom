@@ -18,23 +18,23 @@ func main() {
 
     scores := make([]float64, 0)
     var total float64
-    var ask_user bool = true
+    var askUser bool = true
     var index uint8 = 0
-    var tmp_input float64
+    var tmpInput float64
 
     // Put infinite loop
     fmt.Println()
-    for ask_user {
+    for askUser {
         fmt.Print("Input score ", index + 1, ": ")
 
-        fmt.Scanf("%f", &tmp_input)
+        fmt.Scanf("%f", &tmpInput)
 
-        if (tmp_input == -1) {
-            ask_user = false
+        if (tmpInput == -1) {
+            askUser = false
         } else {
             // Resize score slice
-            scores = append(scores, tmp_input)
-            total += tmp_input
+            scores = append(scores, tmpInput)
+            total += tmpInput
             index++
         }
     }
