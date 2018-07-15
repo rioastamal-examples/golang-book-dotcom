@@ -13,8 +13,9 @@ func main() {
  * Function to sum given numbers.
  *
  * @param ...int numbers
- * @return int Sum of the numbers
- * @return int How many numbers given
+ * @return int theSum Sum of the numbers
+ * @return int theLen How many numbers given
+ * @return []int theNumbers
  */
 func sumNumbers(numbers ...int) (theSum int, theLen int, theNumbers []int) {
     for _, value := range numbers {
